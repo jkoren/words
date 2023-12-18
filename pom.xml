@@ -15,15 +15,28 @@
         <version>3.3.2</version>
       </dependency>
 
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
-        <!-- default scope is compile -->
-    </dependency>
-
+  <!-- https://mvnrepository.com/artifact/junit/junit -->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.13.2</version>
+          <scope>test</scope>
+          <!-- default scope is compile -->
+      </dependency>
     </dependencies>
+
+    <build>
+  <!-- nothing for now -->
+    </build>
+
+    <reporting>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-report-plugin</artifactId>
+          <version>2.18.1</version>
+        </plugin>
+      </plugins>
+    </reporting>
 
 </project>
